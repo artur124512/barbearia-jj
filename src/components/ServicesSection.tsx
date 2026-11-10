@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, Check, Sparkles, Calendar, ChevronRight, Star, HelpCircle } from 'lucide-react';
+import { Clock, Check, Sparkles, Phone, ChevronRight, Star, HelpCircle } from 'lucide-react';
 import { SERVICES_DATA } from '../data/mockData';
 import { ServiceCategory } from '../types';
 import { getBookingUrl } from '../constants';
@@ -84,7 +84,7 @@ export const ServicesSection: React.FC = () => {
         >
           <AnimatePresence>
             {filteredServices.map((service) => {
-              const bookingLink = getBookingUrl({ serviceId: service.id });
+              const bookingLink = getBookingUrl({ serviceId: service.id, serviceName: service.name });
               const isConsultation = service.price === 0;
 
               return (
@@ -157,7 +157,7 @@ export const ServicesSection: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Individual SaaS Booking Button */}
+                  {/* Individual WhatsApp Booking Button */}
                   <div className="pt-2">
                     <a
                       href={bookingLink}
@@ -169,8 +169,8 @@ export const ServicesSection: React.FC = () => {
                           : 'bg-dark-base hover:bg-gold-gradient hover:text-dark-base text-slate-200 border border-gold/40 hover:border-transparent'
                       }`}
                     >
-                      <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>{isConsultation ? 'Consultar / Agendar com Joares' : 'Agendar este serviço'}</span>
+                      <Phone className="w-4 h-4 flex-shrink-0 text-current" />
+                      <span>{isConsultation ? 'Consultar no WhatsApp' : 'Agendar no WhatsApp'}</span>
                       <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>
                   </div>

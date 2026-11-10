@@ -1,6 +1,6 @@
 import React from 'react';
 import { Zap, MessageCircle } from 'lucide-react';
-import { getWhatsAppUrl, SAAS_BOOKING_URL } from '../constants';
+import { getWhatsAppUrl } from '../constants';
 
 export const FloatingActions: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ export const FloatingActions: React.FC = () => {
       >
         {/* Hover Tooltip / Balloon on desktop */}
         <div className="hidden sm:flex items-center mr-3 px-3.5 py-1.5 rounded-full bg-dark-card border border-gold/40 text-xs font-semibold text-white shadow-2xl backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-          <span>Dúvidas? Fale conosco no WhatsApp</span>
+          <span>Agende seu horário pelo WhatsApp</span>
           <div className="w-2 h-2 bg-dark-card border-r border-t border-gold/40 transform rotate-45 -mr-4" />
         </div>
 
@@ -34,13 +34,13 @@ export const FloatingActions: React.FC = () => {
       {/* Mobile Sticky Bottom Bar (Exclusiva para Mobile) */}
       <div className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-dark-base/95 backdrop-blur-lg border-t border-gold/30 p-3 px-4 shadow-[0_-5px_20px_rgba(0,0,0,0.8)]">
         <a
-          href={SAAS_BOOKING_URL}
+          href={getWhatsAppUrl()}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full py-3 px-4 rounded-xl font-extrabold text-sm text-dark-base bg-gold-gradient shadow-gold-glow flex items-center justify-center gap-2 active:scale-98 transition-transform"
         >
           <Zap className="w-4 h-4 fill-dark-base" />
-          <span>⚡ Agendar Horário Online</span>
+          <span>⚡ Agendar Horário no WhatsApp</span>
         </a>
       </div>
     </>

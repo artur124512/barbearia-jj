@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Instagram, Star, Calendar, Award, ChevronRight, CheckCircle2, Phone } from 'lucide-react';
+import { Instagram, Star, Award, ChevronRight, CheckCircle2, Phone } from 'lucide-react';
 import { BARBERS_DATA } from '../data/mockData';
-import { getBookingUrl, getWhatsAppUrl, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../constants';
+import { getWhatsAppUrl, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../constants';
 
 export const BarbersSection: React.FC = () => {
   const barber = BARBERS_DATA[0];
-  const bookingLink = getBookingUrl({ barberId: barber.id });
 
   return (
     <section id="barbeiros" className="py-24 relative overflow-hidden bg-dark-base">
@@ -115,16 +114,16 @@ export const BarbersSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Buttons: Instagram + SaaS + WhatsApp */}
+              {/* Buttons: WhatsApp + Instagram */}
               <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a
-                  href={bookingLink}
+                  href={getWhatsAppUrl("Olá, Joares! Gostaria de agendar um horário com você na Barbearia J&J.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 py-3.5 px-6 rounded-xl bg-gold-gradient hover:bg-gold-gradient-hover text-dark-base font-bold text-sm flex items-center justify-center gap-2 shadow-gold-glow hover:shadow-gold-glow-lg transition-all duration-300 transform hover:-translate-y-0.5"
                 >
-                  <Calendar className="w-4 h-4" />
-                  <span>Agendar Horário com Joares</span>
+                  <Phone className="w-4 h-4 text-dark-base" />
+                  <span>Agendar no WhatsApp com Joares</span>
                   <ChevronRight className="w-4 h-4" />
                 </a>
 
@@ -136,17 +135,6 @@ export const BarbersSection: React.FC = () => {
                 >
                   <Instagram className="w-4 h-4 text-pink-500" />
                   <span>{INSTAGRAM_HANDLE}</span>
-                </a>
-
-                <a
-                  href={getWhatsAppUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="WhatsApp com Joares"
-                  className="py-3 px-4 rounded-xl bg-dark-base hover:bg-dark-card border border-gold/30 hover:border-gold text-green-400 flex items-center justify-center transition-colors"
-                  title="Falar no WhatsApp"
-                >
-                  <Phone className="w-4 h-4" />
                 </a>
               </div>
 

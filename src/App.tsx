@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { SaaSFeature } from './components/SaaSFeature';
 import { ServicesSection } from './components/ServicesSection';
 import { GallerySection } from './components/GallerySection';
 import { BarbersSection } from './components/BarbersSection';
@@ -20,26 +19,23 @@ export const App: React.FC = () => {
         {/* 2. Hero Section */}
         <Hero />
 
-        {/* 3. SaaS Booking Spotlight Section */}
-        <SaaSFeature />
-
-        {/* 4. Services Menu & Prices */}
+        {/* 3. Services Menu & Prices */}
         <ServicesSection />
 
-        {/* 5. Lookbook Gallery with Cuts */}
+        {/* 4. Lookbook Gallery with Cuts */}
         <GallerySection />
 
-        {/* 6. Team of Master Barbers */}
+        {/* 5. Team of Master Barbers */}
         <BarbersSection />
 
-        {/* 7. Location, Amenities & Hours */}
+        {/* 6. Location, Amenities & Hours */}
         <AmenitiesAndLocation />
       </main>
 
-      {/* 8. Floating Actions (WhatsApp Pulse FAB + Mobile Sticky Bottom Bar) */}
+      {/* 7. Floating Actions (WhatsApp Pulse FAB + Mobile Sticky Bottom Bar) */}
       <FloatingActions />
 
-      {/* 9. Comprehensive Footer */}
+      {/* 8. Comprehensive Footer */}
       <Footer />
     </div>
   );

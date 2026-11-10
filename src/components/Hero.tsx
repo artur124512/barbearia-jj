@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Phone, Star, ShieldCheck, Sparkles, Clock, CheckCircle2, ChevronRight } from 'lucide-react';
-import { SAAS_BOOKING_URL, getWhatsAppUrl } from '../constants';
+import { Phone, Star, ShieldCheck, Sparkles, Clock, CheckCircle2, ChevronRight } from 'lucide-react';
+import { getWhatsAppUrl } from '../constants';
 
 export const Hero: React.FC = () => {
   return (
@@ -91,39 +91,36 @@ export const Hero: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>Agendamento Online 24h</span>
+                <span>Agendamento via WhatsApp</span>
               </div>
             </motion.div>
 
-            {/* CTA Duplo com Destaque Forte para o Agendamento */}
+            {/* CTA Direto para o WhatsApp */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2"
             >
-              {/* Botão Primário: SaaS */}
+              {/* Botão Primário: WhatsApp com Joares */}
               <a
-                href={SAAS_BOOKING_URL}
+                href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base text-dark-base bg-gold-gradient hover:bg-gold-gradient-hover shadow-gold-glow hover:shadow-gold-glow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
               >
                 <span className="absolute inset-0 animate-shimmer" />
-                <Calendar className="w-5 h-5 text-dark-base group-hover:scale-110 transition-transform" />
-                <span className="relative z-10 tracking-wide">Agendar Online com Joares</span>
+                <Phone className="w-5 h-5 text-dark-base group-hover:scale-110 transition-transform" />
+                <span className="relative z-10 tracking-wide">Agendar no WhatsApp com Joares</span>
                 <ChevronRight className="w-4 h-4 text-dark-base group-hover:translate-x-1 transition-transform" />
               </a>
 
-              {/* Botão Secundário: WhatsApp */}
+              {/* Botão Secundário: Ver Serviços */}
               <a
-                href={getWhatsAppUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl font-semibold text-sm sm:text-base text-white bg-dark-card hover:bg-dark-cardHover border border-gold/30 hover:border-gold shadow-lg hover:shadow-gold-glow/40 transition-all duration-300 group"
+                href="#servicos"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl font-semibold text-sm sm:text-base text-white bg-dark-card hover:bg-dark-cardHover border border-gold/30 hover:border-gold shadow-lg hover:shadow-gold-glow/40 transition-all duration-300 group"
               >
-                <Phone className="w-5 h-5 text-green-400 group-hover:scale-110 transition-transform" />
-                <span>Falar no WhatsApp</span>
+                <span>Ver Serviços & Valores</span>
               </a>
             </motion.div>
 
@@ -176,12 +173,13 @@ export const Hero: React.FC = () => {
                       <p className="text-[11px] text-gold font-medium">Rua Cel. Jordão, 814</p>
                     </div>
                     <a
-                      href={SAAS_BOOKING_URL}
+                      href={getWhatsAppUrl()}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-xs font-bold text-gold hover:text-white flex items-center gap-1 bg-gold/15 hover:bg-gold/30 px-2.5 py-1.5 rounded-lg border border-gold/30 transition-colors"
                     >
-                      <span>Ver Vagas</span>
+                      <Phone className="w-3 h-3 text-gold" />
+                      <span>WhatsApp</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
@@ -223,7 +221,7 @@ export const Hero: React.FC = () => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
                 <span className="text-[11px] font-semibold text-slate-200">
-                  Agenda Aberta Online
+                  Agende no WhatsApp
                 </span>
               </motion.div>
 

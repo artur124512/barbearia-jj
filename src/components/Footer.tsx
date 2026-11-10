@@ -1,6 +1,6 @@
 import React from 'react';
-import { Scissors, Instagram, Phone, MapPin, Clock, Calendar, ExternalLink, ShieldCheck } from 'lucide-react';
-import { BARBERSHOP_INFO, SAAS_BOOKING_URL, getWhatsAppUrl, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../constants';
+import { Scissors, Instagram, Phone, MapPin, Clock, ShieldCheck } from 'lucide-react';
+import { BARBERSHOP_INFO, getWhatsAppUrl, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../constants';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
 
             <p className="text-sm text-slate-muted leading-relaxed">
               Atendimento exclusivo e individualizado pelo barbeiro Joares Meireles. 
-              Ambiente de bom gosto, pontualidade, biossegurança e agendamento digital para sua comodidade.
+              Ambiente climatizado, pontualidade, biossegurança e agendamento direto pelo WhatsApp.
             </p>
 
             <div className="flex items-center gap-3 pt-1">
@@ -55,16 +55,6 @@ export const Footer: React.FC = () => {
               >
                 <Phone className="w-5 h-5" />
               </a>
-
-              <a
-                href={SAAS_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Agendamento Online"
-                className="w-10 h-10 rounded-xl bg-dark-base border border-gold/30 hover:border-gold flex items-center justify-center text-slate-300 hover:text-gold transition-colors"
-              >
-                <Calendar className="w-5 h-5" />
-              </a>
             </div>
           </div>
 
@@ -81,9 +71,8 @@ export const Footer: React.FC = () => {
                 <a href="#servicos" className="hover:text-gold transition-colors">Serviços & Preços</a>
               </li>
               <li>
-                <a href="#saas-booking" className="hover:text-gold transition-colors flex items-center gap-1.5 text-gold">
-                  <span>Agendamento Online</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors flex items-center gap-1.5 text-gold font-medium">
+                  <span>Agendamento WhatsApp</span>
                 </a>
               </li>
               <li>
@@ -136,7 +125,6 @@ export const Footer: React.FC = () => {
             <h4 className="font-serif text-base font-bold text-white tracking-wide">
               Contato & Local
             </h4>
-            
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-1" />
@@ -166,24 +154,23 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick SaaS CTA in Footer */}
+            {/* Quick WhatsApp CTA in Footer */}
             <div className="pt-2">
               <a
-                href={SAAS_BOOKING_URL}
+                href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-bold text-dark-base bg-gold-gradient hover:bg-gold-gradient-hover shadow-gold-glow"
               >
-                <Calendar className="w-3.5 h-3.5" />
-                <span>Agendar com Joares</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+                <Phone className="w-3.5 h-3.5" />
+                <span>Agendar no WhatsApp</span>
               </a>
             </div>
           </div>
 
         </div>
 
-        {/* Bottom Credits & Technology Signoff */}
+        {/* Bottom Credits */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
           <div>
             <p>
@@ -194,20 +181,9 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* SaaS Signature */}
           <div className="p-2.5 rounded-xl bg-dark-base border border-gold/20 flex items-center gap-2 text-slate-400">
             <ShieldCheck className="w-4 h-4 text-gold" />
-            <span>
-              Tecnologia de Agendamento por{' '}
-              <a
-                href={SAAS_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gold font-bold hover:underline"
-              >
-                {BARBERSHOP_INFO.saasProviderName}
-              </a>
-            </span>
+            <span>Atendimento com hora marcada via WhatsApp</span>
           </div>
         </div>
 

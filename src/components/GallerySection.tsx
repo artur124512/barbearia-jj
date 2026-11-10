@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Instagram, Scissors, ExternalLink } from 'lucide-react';
 import { GALLERY_DATA } from '../data/mockData';
-import { INSTAGRAM_URL, INSTAGRAM_HANDLE, SAAS_BOOKING_URL } from '../constants';
+import { INSTAGRAM_URL, INSTAGRAM_HANDLE, getWhatsAppUrl } from '../constants';
 
 export const GallerySection: React.FC = () => {
   const [filter, setFilter] = useState<string>('todos');
@@ -110,7 +110,7 @@ export const GallerySection: React.FC = () => {
                   {/* Fast Action in Hover */}
                   <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a
-                      href={SAAS_BOOKING_URL}
+                      href={getWhatsAppUrl(`Olá, Joares! Vi o corte "${item.title}" no site da Barbearia J&J e gostaria de agendar um horário.`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 py-2 px-3 rounded-lg bg-gold-gradient text-dark-base text-xs font-bold flex items-center justify-center gap-1.5 shadow-gold-glow"

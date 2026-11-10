@@ -8,10 +8,9 @@ import {
   ShieldCheck, 
   ExternalLink,
   Navigation,
-  Calendar,
   Phone
 } from 'lucide-react';
-import { BARBERSHOP_INFO, SAAS_BOOKING_URL, getWhatsAppUrl } from '../constants';
+import { BARBERSHOP_INFO, getWhatsAppUrl } from '../constants';
 
 export const AmenitiesAndLocation: React.FC = () => {
   const amenities = [
@@ -143,13 +142,13 @@ export const AmenitiesAndLocation: React.FC = () => {
                 </a>
 
                 <a
-                  href={SAAS_BOOKING_URL}
+                  href={getWhatsAppUrl("Olá, Joares! Gostaria de agendar um horário na Barbearia J&J.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-2.5 px-4 rounded-xl bg-gold-gradient text-dark-base text-xs font-bold flex items-center justify-center gap-1.5 shadow-gold-glow hover:bg-gold-gradient-hover"
                 >
-                  <Calendar className="w-4 h-4" />
-                  <span>Agendar com Joares</span>
+                  <Phone className="w-4 h-4" />
+                  <span>Agendar no Whats</span>
                 </a>
               </div>
             </div>

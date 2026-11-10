@@ -17,9 +17,8 @@ Single Page Application (SPA) moderna, rápida e de alta conversão desenvolvida
 - **Barbeiro:** Joares Meireles
 - **Endereço:** R. Cel. Jordão, 814 - Vila Paiva, São Paulo - SP, 02075-030
 - **Horário:** Terça a Sábado das 09:00 às 20:00
-- **WhatsApp:** (11) 97961-0293
+- **WhatsApp (Agendamento):** [(11) 97961-0293](https://wa.me/5511979610293)
 - **Instagram:** [@joaresmeireles](https://www.instagram.com/joaresmeireles/)
-- **Agendamento Online:** [Agenda Fácil Barbearia J&J](https://agendafacil-saas-beta.vercel.app/barbearia-jj)
 
 ---
 
