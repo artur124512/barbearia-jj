@@ -10,7 +10,7 @@ import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#0D0D10] text-[#E4E4E7] flex flex-col font-sans selection:bg-[#D4AF37]/30 selection:text-[#D4AF37]">
+    <div className="min-h-screen bg-[#2D3142] text-[#F8F9FA] flex flex-col font-sans selection:bg-[#7A1F2D]/40 selection:text-[#F8F9FA]">
       {/* 1. Header & Navigation */}
       <Navbar />
 
