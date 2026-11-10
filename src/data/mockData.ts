@@ -109,7 +109,7 @@ export const BARBERS_DATA: Barber[] = [
     role: 'Mestre Barbeiro & Proprietário',
     experience: 'Mais de 10 anos de experiência',
     specialty: 'Cortes modernos, Degradê navalhado, Barboterapia & Visagismo',
-    photo: 'images/3-DSC00857.jpg', // Foto oficial do Joares com a tesoura
+    photo: 'https://lh3.googleusercontent.com/d/1qaSoowTSLUEOLcNbdY5FQYKT0g2_cbFC=w1200', // Foto oficial do Joares com a tesoura
     instagramHandle: '@joaresmeireles',
     instagramUrl: 'https://www.instagram.com/joaresmeireles/',
     rating: 5.0,
@@ -124,7 +124,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'fade',
     barberName: 'Joares Meireles',
     tag: 'Degradê Navalhado',
-    imageUrl: 'images/11-DSC00874.jpg'
+    imageUrl: 'https://lh3.googleusercontent.com/d/1T8JMYoD0-SlnGVIdDR-k2bYQBMzyKpiz=w1200'
   },
   {
     id: 'g-2',
@@ -132,7 +132,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'barba',
     barberName: 'Joares Meireles',
     tag: 'Navalhete & Precisão',
-    imageUrl: 'images/8-DSC00866.jpg'
+    imageUrl: 'https://lh3.googleusercontent.com/d/1tGG-Uv-Pk7_OInj-UE2SxYkB0YP9R_py=w1200'
   },
   {
     id: 'g-3',
@@ -140,7 +140,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'social',
     barberName: 'Joares Meireles',
     tag: 'Corte & Penteado',
-    imageUrl: 'images/DSC00880.jpg'
+    imageUrl: 'https://lh3.googleusercontent.com/d/131mrFCdGkYpwFpNSzdTzeNR5plDF0O4C=w1200'
   },
   {
     id: 'g-4',
@@ -148,7 +148,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'fade',
     barberName: 'Joares Meireles',
     tag: 'Fade na Régua',
-    imageUrl: 'images/DSC01721.jpg'
+    imageUrl: 'https://lh3.googleusercontent.com/d/1TSFuQ4QHt5kXPrQ_42uClAumV4my839o=w1200'
   },
   {
     id: 'g-5',
@@ -156,7 +156,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'todos',
     barberName: 'Barbearia J&J',
     tag: 'Ambiente Tradicional',
-    imageUrl: 'images/10-DSC00870.jpg'
+    imageUrl: 'https://lh3.googleusercontent.com/d/1DSWvy7gnlqWBJFCKwWenKMrQjDp3Fhip=w1200'
   },
   {
     id: 'g-6',
@@ -164,7 +164,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     category: 'fade',
     barberName: 'Joares Meireles',
     tag: 'Joares Meireles',
-    imageUrl: 'images/DSC01723.jpg'
+    imageUrl: 'https://lh3.googleusercontent.com/d/1wGO9gKsFOH9wAjmWdXcsDTwuDaiAanmu=w1200'
   }
 ];
 

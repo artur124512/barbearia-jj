@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-luminosity filter contrast-125 scale-105"
           style={{
-            backgroundImage: `url('images/11-DSC00874.jpg')`
+            backgroundImage: `url('https://lh3.googleusercontent.com/d/1T8JMYoD0-SlnGVIdDR-k2bYQBMzyKpiz=w1200')`
           }}
         />
         
@@ -154,7 +154,7 @@ export const Hero: React.FC = () => {
               {/* Main Image Container */}
               <div className="relative rounded-2xl overflow-hidden border border-gold/30 bg-dark-card shadow-2xl">
                 <img
-                  src="images/11-DSC00874.jpg"
+                  src="https://lh3.googleusercontent.com/d/1T8JMYoD0-SlnGVIdDR-k2bYQBMzyKpiz=w1200"
                   alt="Joares Meireles na Barbearia J&J"
                   className="w-full h-[380px] sm:h-[450px] object-cover object-top filter brightness-95 contrast-105 hover:scale-105 transition-transform duration-700"
                 />
