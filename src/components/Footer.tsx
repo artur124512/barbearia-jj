@@ -109,7 +109,7 @@ export const Footer: React.FC = () => {
                 <span className="text-xs text-gold font-semibold">R$ 45,00</span>
               </li>
               <li className="flex items-center justify-between">
-                <span>Barba com Toalha Quente</span>
+                <span>Barba</span>
                 <span className="text-xs text-gold font-semibold">R$ 30,00</span>
               </li>
               <li className="flex items-center justify-between">

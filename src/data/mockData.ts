@@ -18,17 +18,17 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'barba-alinhada',
-    name: 'Barba & Barboterapia',
+    name: 'Barba',
     category: 'barba',
     price: 30,
     duration: '30 min',
     popular: true,
-    description: 'Desenho e alinhamento preciso da barba com lâmina descartável, esfoliação facial, toalha quente e aplicação de balm amaciante para hidratação profunda.',
+    description: 'Desenho e alinhamento preciso da barba com lâmina descartável, toalha quente e pós-barba hidratante.',
     features: [
       'Alinhamento e contorno preciso na navalha',
       'Toalha quente aromática relaxante',
-      'Esfoliação e alívio de irritação de pele',
-      'Óleo e balm amaciante de alta fixação'
+      'Alívio de irritação de pele',
+      'Óleo e balm amaciante'
     ]
   },
   {
@@ -46,11 +46,11 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: 'sobrancelha-navalha',
-    name: 'Design de Sobrancelha',
+    name: 'Sobrancelha',
     category: 'tratamentos',
     price: 15,
     duration: '15 min',
-    description: 'Limpeza, alinhamento e harmonização das sobrancelhas masculinas na lâmina ou pinça, preservando a naturalidade da expressão facial.',
+    description: 'Limpeza e alinhamento das sobrancelhas masculinas na lâmina ou pinça com acabamento natural.',
     features: [
       'Alinhamento simétrico e natural',
       'Remoção de excessos no centro e bordas',
@@ -96,7 +96,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     features: [
       'Corte de cabelo completo',
       'Barba com toalha quente & balm',
-      'Design de sobrancelha',
+      'Sobrancelha',
       'Atendimento individual com hora marcada'
     ]
   }
@@ -108,7 +108,7 @@ export const BARBERS_DATA: Barber[] = [
     name: 'Joares Meireles',
     role: 'Mestre Barbeiro & Proprietário',
     experience: 'Mais de 10 anos de experiência',
-    specialty: 'Cortes modernos, Degradê navalhado, Barboterapia & Visagismo',
+    specialty: 'Cortes modernos, Degradê navalhado, Barba & Visagismo',
     photo: 'https://lh3.googleusercontent.com/d/1qaSoowTSLUEOLcNbdY5FQYKT0g2_cbFC=w1200', // Foto oficial do Joares com a tesoura
     instagramHandle: '@joaresmeireles',
     instagramUrl: 'https://www.instagram.com/joaresmeireles/',
