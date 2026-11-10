@@ -8,8 +8,8 @@
   }
   
   body {
-    background-color: #2D3142; /* Cinza Chumbo */
-    color: #F8F9FA; /* Branco Off-White */
+    background-color: #0F172A; /* Azul Petróleo Escuro / Marinho Profundo */
+    color: #F1F5F9; /* Cinza Neutro Claro */
     overflow-x: hidden;
   }
 
@@ -19,60 +19,60 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1E212D;
+    background: #090E1A;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #1B2A4A; /* Azul Marinho Real */
+    background: #1E293B;
     border-radius: 4px;
-    border: 1px solid rgba(122, 31, 45, 0.4); /* Vinho / Bordô */
+    border: 1px solid rgba(200, 168, 130, 0.35); /* Madeira Clara / Carvalho */
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #7A1F2D; /* Vinho / Bordô */
+    background: #C8A882; /* Madeira Clara */
   }
 }
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F8F9FA 25%, #E87A88 65%, #7A1F2D 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #DFCAAE 35%, #C8A882 70%, #A68358 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .text-wine-gradient {
-    background: linear-gradient(135deg, #F8F9FA 0%, #E87A88 50%, #7A1F2D 100%);
+  .text-wood-gradient {
+    background: linear-gradient(135deg, #FFFFFF 0%, #DFCAAE 40%, #C8A882 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .text-navy-gradient {
-    background: linear-gradient(135deg, #F8F9FA 0%, #7C98CC 50%, #1B2A4A 100%);
+  .text-steel-gradient {
+    background: linear-gradient(135deg, #FFFFFF 0%, #93C5FD 50%, #3B82F6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .border-gold-subtle {
-    border: 1px solid rgba(122, 31, 45, 0.25);
+    border: 1px solid rgba(200, 168, 130, 0.25);
   }
 
   .border-gold-glow {
-    border: 1px solid rgba(122, 31, 45, 0.6);
-    box-shadow: 0 0 15px rgba(122, 31, 45, 0.35);
+    border: 1px solid rgba(200, 168, 130, 0.55);
+    box-shadow: 0 0 15px rgba(200, 168, 130, 0.3);
   }
 
   .glass-card {
-    background: rgba(36, 40, 54, 0.88); /* Chumbo profundo */
+    background: rgba(30, 41, 59, 0.85); /* Superfície Petróleo elegante */
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(27, 42, 74, 0.6); /* Borda Azul Marinho */
+    border: 1px solid rgba(200, 168, 130, 0.25); /* Borda Madeira Clara */
   }
 
   .glass-header {
-    background: rgba(27, 42, 74, 0.92); /* Azul Marinho Real */
+    background: rgba(15, 23, 42, 0.92); /* Azul Petróleo Escuro */
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(122, 31, 45, 0.4); /* Detalhe Vinho / Bordô */
+    border-bottom: 1px solid rgba(200, 168, 130, 0.2); /* Detalhe Carvalho */
   }
 }
 
@@ -90,7 +90,7 @@
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.35) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   background-size: 200% 100%;

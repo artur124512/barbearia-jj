@@ -9,56 +9,57 @@ export default {
     extend: {
       colors: {
         // Paleta Oficial Solicitada:
-        // Azul Marinho Real: #1B2A4A
-        // Vinho / Bordô Escuro: #7A1F2D
-        // Branco Off-White: #F8F9FA
-        // Cinza Chumbo (Base): #2D3142
-        navy: {
-          light: '#283C66',
-          DEFAULT: '#1B2A4A', // Azul Marinho Real
-          dark: '#121C31',
-          glow: 'rgba(27, 42, 74, 0.45)',
+        // Azul Petróleo Escuro / Marinho Profundo: #0F172A
+        // Cinza Neutro Claro: #F1F5F9
+        // Branco: #FFFFFF
+        // Madeira Clara (Carvalho/Bege Claro): #C8A882
+        // Azul Aço (Secundário): #3B82F6
+        petrol: {
+          DEFAULT: '#0F172A', // Base Petróleo / Marinho Profundo
+          card: '#1E293B',    // Superfície dos cartões
+          cardHover: '#26334D',
+          darkest: '#090E1A',
+          subtle: '#334155',
         },
-        wine: {
-          light: '#9B2A3B',
-          DEFAULT: '#7A1F2D', // Vinho / Bordô Escuro
-          hover: '#8C2434',
-          dark: '#54151E',
-          glow: 'rgba(122, 31, 45, 0.45)',
+        wood: {
+          light: '#DFCAAE',
+          DEFAULT: '#C8A882', // Madeira Clara / Carvalho
+          hover: '#D4B692',
+          dark: '#A68358',
+          glow: 'rgba(200, 168, 130, 0.35)',
         },
-        offwhite: {
-          DEFAULT: '#F8F9FA', // Branco Off-White
-          muted: '#E9ECEF',
-          subtle: '#CED4DA',
+        steel: {
+          light: '#60A5FA',
+          DEFAULT: '#3B82F6', // Azul Aço (Secundário)
+          hover: '#2563EB',
+          dark: '#1D4ED8',
+          glow: 'rgba(59, 130, 246, 0.4)',
         },
-        lead: {
-          DEFAULT: '#2D3142', // Cinza Chumbo (Base)
-          light: '#373C50',
-          card: '#242836',
-          cardHover: '#2A2F40',
-          dark: '#1E212D',
-          darkest: '#161922',
+        neutral: {
+          light: '#F1F5F9', // Cinza Neutro Claro
+          white: '#FFFFFF', // Branco puro
+          muted: '#94A3B8',
+          border: 'rgba(241, 245, 249, 0.12)',
         },
-        // Mapeamentos para harmonia perfeita:
+        // Mapeamentos retrocompatíveis elegantes:
         dark: {
-          base: '#2D3142', // Cinza Chumbo Base
-          card: '#242836', // Superfície de card chumbo escurecido
-          cardHover: '#2C3246',
-          subtle: '#373C50',
-          border: 'rgba(248, 249, 250, 0.12)',
-          borderHover: 'rgba(122, 31, 45, 0.5)'
+          base: '#0F172A',
+          card: '#1E293B',
+          cardHover: '#26334D',
+          subtle: '#334155',
+          border: 'rgba(200, 168, 130, 0.2)',
+          borderHover: 'rgba(200, 168, 130, 0.5)'
         },
-        // 'gold' mapeado para os novos acentos Vinho / Bordô Real
         gold: {
-          light: '#F8F9FA',
-          DEFAULT: '#C44558', // Tom bordô iluminado para textos
-          dark: '#7A1F2D', // Vinho / Bordô Escuro base
-          metallic: '#9B2A3B',
-          glow: 'rgba(122, 31, 45, 0.45)',
+          light: '#DFCAAE',
+          DEFAULT: '#C8A882', // Madeira Clara (Carvalho)
+          dark: '#A68358',
+          metallic: '#C8A882',
+          glow: 'rgba(200, 168, 130, 0.35)',
         },
         slate: {
-          muted: '#CED4DA',
-          light: '#F8F9FA'
+          muted: '#94A3B8',
+          light: '#F1F5F9'
         }
       },
       fontFamily: {
@@ -66,20 +67,22 @@ export default {
         sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
       },
       backgroundImage: {
-        'gold-gradient': 'linear-gradient(135deg, #7A1F2D 0%, #9B2A3B 100%)',
-        'gold-gradient-hover': 'linear-gradient(135deg, #8C2434 0%, #AF3145 100%)',
-        'navy-gradient': 'linear-gradient(135deg, #1B2A4A 0%, #283C66 100%)',
-        'navy-gradient-hover': 'linear-gradient(135deg, #233761 0%, #30487A 100%)',
-        'royal-gradient': 'linear-gradient(135deg, #1B2A4A 0%, #7A1F2D 100%)',
-        'gold-radial': 'radial-gradient(circle at center, rgba(122, 31, 45, 0.25) 0%, transparent 70%)',
-        'navy-radial': 'radial-gradient(circle at center, rgba(27, 42, 74, 0.35) 0%, transparent 70%)',
-        'dark-gradient': 'linear-gradient(180deg, rgba(36, 40, 54, 0.95) 0%, rgba(45, 49, 66, 0.98) 100%)',
+        'gold-gradient': 'linear-gradient(135deg, #DFCAAE 0%, #C8A882 50%, #A68358 100%)',
+        'gold-gradient-hover': 'linear-gradient(135deg, #E8D8C2 0%, #D4B692 50%, #B89366 100%)',
+        'wood-gradient': 'linear-gradient(135deg, #DFCAAE 0%, #C8A882 50%, #A68358 100%)',
+        'wood-gradient-hover': 'linear-gradient(135deg, #E8D8C2 0%, #D4B692 50%, #B89366 100%)',
+        'steel-gradient': 'linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)',
+        'steel-gradient-hover': 'linear-gradient(135deg, #60A5FA 0%, #2563EB 100%)',
+        'petrol-gradient': 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)',
+        'gold-radial': 'radial-gradient(circle at center, rgba(200, 168, 130, 0.2) 0%, transparent 70%)',
+        'steel-radial': 'radial-gradient(circle at center, rgba(59, 130, 246, 0.25) 0%, transparent 70%)',
+        'dark-gradient': 'linear-gradient(180deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%)',
       },
       boxShadow: {
-        'gold-glow': '0 0 25px rgba(122, 31, 45, 0.45)',
-        'gold-glow-lg': '0 0 40px rgba(122, 31, 45, 0.65)',
-        'navy-glow': '0 0 25px rgba(27, 42, 74, 0.5)',
-        'card-dark': '0 10px 30px -10px rgba(18, 20, 27, 0.7)',
+        'gold-glow': '0 0 25px rgba(200, 168, 130, 0.35)',
+        'gold-glow-lg': '0 0 40px rgba(200, 168, 130, 0.55)',
+        'steel-glow': '0 0 25px rgba(59, 130, 246, 0.4)',
+        'card-dark': '0 10px 30px -10px rgba(9, 14, 26, 0.7)',
       }
     },
   },
